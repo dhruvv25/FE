@@ -1,0 +1,178 @@
+/* 
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+:root {
+    --bg-color: #f5f5f5;
+    --text-color: #333;
+    --widget-bg: #fff;
+    --sidebar-bg: #333;
+    --sidebar-text: #fff;
+}
+
+.dark-theme {
+    --bg-color: #333;
+    --text-color: #f5f5f5;
+    --widget-bg: #444;
+    --sidebar-bg: #111;
+    --sidebar-text: #f5f5f5;
+}
+
+.dashboard {
+    display: flex;
+    height: 100vh;
+}
+
+
+
+
+
+
+.widgets-container {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: var(--bg-color);
+    
+}
+
+ 
+
+.widget {
+    width: calc(97% - 20px);
+    background-color: var(--widget-bg);
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    cursor: move;
+    
+}
+
+
+button {
+    background-color: var(--sidebar-text);
+    color: var(--sidebar-bg);
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+} */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'SF Pro', sans-serif ; /* changed font family to Termina */
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+
+}
+  
+  :root {
+    --bg-color: #f5f5f5;
+    --text-color: #333;
+    --widget-bg: #fff;
+    --sidebar-bg: #333;
+    --sidebar-text: #fff;
+  }
+  
+  .dark-theme {
+    --bg-color: #333;
+    --text-color: #f5f5f5;
+    --widget-bg: #444;
+    --sidebar-bg: #111;
+    --sidebar-text: #f5f5f5;
+  }
+  
+  .dashboard {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .widgets-container {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: var(--bg-color);
+  }
+  
+  .widget {
+    width: calc(97% - 20px);
+    background-color: var(--widget-bg);
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    cursor: move;
+  }
+  
+  button {
+    background-color: #e8e6f3; /* updated button color to light blue */
+    color: var(--sidebar-bg);
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-family: 'Termina', monospace; /* changed font family to Termina */
+  }
+  
+  button:hover {
+    background-color: #555; /* updated hover color */
+  }
+  
+  .search-bar {
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-bar:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .search-icon {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 18px;
+    color: #666;
+    cursor: pointer;
+  }
+  
+  .search-icon:hover {
+    color: #333;
+  }
